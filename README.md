@@ -1,5 +1,5 @@
 # Ex. No: 8   Packet Tracer: Connect a Router to a LAN
-# Date: ___________
+# Date: 26-09-2025
 ________________________________________<br>
 # Objective
 Configure and verify router LAN/WAN interfaces in Cisco Packet Tracer and test end-to-end connectivity.<br>
@@ -14,8 +14,8 @@ ________________________________________<br>
 •	4 PCs (PC1–PC4) with NICs<br>
 •	Copper straight-through cables for LAN links; Serial DCE/DTE cable for WAN link <br>
 ________________________________________<br>
-# Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1—S1—PC1/PC2 and R2—S2—PC3/PC4, plus R1–R2 Serial link S0/0/0.)<br>
+# Network Topology Diagram:
+<img width="1920" height="1080" alt="494211687-252be551-3d68-4444-840f-52e94722d912" src="https://github.com/user-attachments/assets/1d94a7b1-bb8c-4672-90b6-1b86b42941e1" />
 ________________________________________<br>
 Addressing Table (from activity)<br>
 Device	Interface	IP Address	Subnet Mask	Default Gateway<br>
@@ -111,8 +111,17 @@ ________________________________________<br>
 •	Save: copy running-config startup-config / wr <br>
 ________________________________________<br>
 # Output (Attach Screenshots)
-•	show ip interface brief on R1 and R2 (after configuration)<br>
-•	show ip route on R1 and R2<br>
+•	show ip interface brief on R1 and R2 (after configuration):
+
+<img width="1920" height="1080" alt="494212982-ddb83287-da01-475f-b0a1-9588197fc546" src="https://github.com/user-attachments/assets/80944bff-c012-4fca-86e4-5bdccc5943fc" />
+<img width="1920" height="1080" alt="494212963-2d3695f7-1f59-4003-bcc9-928ad1b835e5" src="https://github.com/user-attachments/assets/524d9141-cc77-47f0-a5d2-2e030b0f820d" />
+
+These diagram shows interface brief on R1 and R2 after configuration
+
+•	show ip route on R1 and R2:
+These diagrams shows the ip route path taken on R1 and R2
+
+
 •	Successful ping PC1 → PC4; R2 → PC2<br>
 •	Interface up messages after no shutdown on each link <br>
 ________________________________________<br>
