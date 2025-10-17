@@ -103,14 +103,15 @@ o	From PC1, ping PC4.<br>
 o	From R2, ping PC2.<br>
 o	You should also be able to ping all active router interfaces from the PCs. (Switches are not configured for management; you won’t ping them.) <br>
 ________________________________________<br>
-# Commands Used (summary)
+# Commands Used:
 •	Mode/navigation: enable, configure terminal, end<br>
 •	Interface config: interface g0/0 | g0/1 | s0/0/0, ip address A.B.C.D M.M.M.M, description ..., no shutdown<br>
 •	DCE timing (if applicable): clock rate 64000<br>
 •	Show/verify: show interfaces, show interfaces serial 0/0/0, show interfaces g0/0, show ip interface brief, show ip route<br>
 •	Save: copy running-config startup-config / wr <br>
 ________________________________________<br>
-# Output (Attach Screenshots)
+# Output:
+
 •	show ip interface brief on R1 and R2 (after configuration):
 
 <img width="1920" height="1080" alt="494212982-ddb83287-da01-475f-b0a1-9588197fc546" src="https://github.com/user-attachments/assets/80944bff-c012-4fca-86e4-5bdccc5943fc" />
@@ -119,11 +120,22 @@ ________________________________________<br>
 These diagram shows interface brief on R1 and R2 after configuration
 
 •	show ip route on R1 and R2:
+
+<img width="1920" height="1080" alt="494213045-581b4fef-54e0-4967-8607-b454fac8f235" src="https://github.com/user-attachments/assets/41f46015-cb43-45d4-a90b-c5555f660a8e" />
+<img width="1920" height="1080" alt="494213036-151574d0-f855-4467-b453-998d9439eb9d" src="https://github.com/user-attachments/assets/d6816223-1577-4d81-ac2f-10ee4b1aae2f" />
+
 These diagrams shows the ip route path taken on R1 and R2
 
 
-•	Successful ping PC1 → PC4; R2 → PC2<br>
-•	Interface up messages after no shutdown on each link <br>
+•	Successful ping PC1 → PC4; R2 → PC2:
+<img width="1920" height="1080" alt="494213235-5c0e3ddf-1a74-4a08-b9b6-23f3e6b42e0f" src="https://github.com/user-attachments/assets/fc5f08d2-af30-485e-babd-7c3f1c9bba9d" />
+<img width="1920" height="1080" alt="494213218-32ca6f79-fb55-445c-95b5-b12d15a2e39c" src="https://github.com/user-attachments/assets/81bb067d-6c73-4122-8b87-b2462ac7a9ef" />
+
+These diagram shows the successful ping messages between the PCs and Routers
+
+• Interface up messages after no shutdown on each link
+<img width="1920" height="1080" alt="494213295-f4ef677b-a176-49a2-8bfc-6e74ac6a325a" src="https://github.com/user-attachments/assets/486c1bd4-ebdd-4565-a5c8-e72f63f681d4" />
+<img width="1920" height="1080" alt="494213400-b48e1b33-5f16-4346-9916-0d7e73b56b9a" src="https://github.com/user-attachments/assets/b6e5c8d5-2fd1-4104-ab93-0268ecd17ff1" />
 ________________________________________<br>
 # Result
 R1 and R2 were configured with correct IPv4 addresses and interface descriptions, links were brought up, routing tables showed connected networks, and end-to-end connectivity between PCs across the WAN link was verified using pings. The configurations were saved to NVRAM for persistence.<br>
